@@ -41,29 +41,88 @@ Email: pakamaj.w@dti.or.th}
 
 
 \begin{abstract}
-Interactive Whiteboard or Virtual Whiteboard may refer to a device or a computer program providing interactive displays. Interactive whiteboard along with online system can provide interactive long-distance conferencing, training, or educating systems. Interactive whiteboard have been extensively used in classrooms and meeting rooms. The use of online interactive whiteboard can be applied for the military as a distributed mission planning system. Information can be shared locally through LAN or globally through internet. Due to limitations of military networks in terms of security, frequency, bandwidth, and computational power of the equipment. This paper introduces a novel online interactive whiteboard design framework that specifically aim at the military application.      
+An Interactive Whiteboard (Virtual Whiteboard) may refer to a device or a computer program providing interactive displays. 
+%%
+This interactive whiteboard along with online system can provide efficient interactive long-distance conferencing, training, or educating systems. 
+%%
+These systems have been extensively used in classrooms and meeting rooms. 
+%%
+In fact, the use of online interactive whiteboard can be applied for the military as a distributed mission planning system. 
+%%
+An information can be shared locally through LAN or globally through Internet. 
+%%
+This concept is relatively challenged due to the limitations of military networks in terms of security, frequency, bandwidth, and computational power of the equipment. 
+%%
+This paper introduces a novel online interactive whiteboard design framework that specifically aim at the military application.      
 \end{abstract}
 
 \IEEEpeerreviewmaketitle
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-A military operation involves three-step process; planning, preparing, and execute. To accomplish the mission, a commander and his supporting staffs must drive the operation process through understanding, visualizing, describing, directing, and assessing. \cite{AA} A mission planner is a tool to help a commander and staffs understanding, visualizing, describing, directing, and assessing the operation during the planning step. The use of online interactive whiteboard as mission planning tool can make operation be more effective. An online interactive whiteboard is a device or a program that allows participants from different locations to share the same whiteboard screen. Participants can change content of the screen and the updated screen is distributed among the participant in real-time.   
-Participants can create common understanding of the operation using online interactive whiteboard. An Online interactive whiteboard provides visualization for situation understanding and determining desired goal. An operation can be described to all participants to shared understanding and purpose using the online interactive whiteboard. A commander may use an online interactive whiteboard to direct the mission by establishing an intent, setting objectives, and issuing clear tasks to subordinate units. An online interactive whiteboard provides an overview of the plan for easy assessment of the plan. Participants should be able to join a discussion, leave a discussion, and add information to the whiteboard while always having an up-to-date image of the current whiteboard. 
-An online interactive whiteboard is a network application or device, where the information is exchanged globally via internet or locally LAN. The online interactive whiteboards have been extensively used in classrooms and civilian meeting rooms, which are depended on public networks. The military application operates in different networks, which is specifically for military operation. Due to limitation of military networks in terms of security, frequency, bandwidth, and computational power of the equipment, the design of an online interactive whiteboard require a novel approach. 
-This paper introduces a novel online interactive whiteboard design framework that specifically aim at the military application over internet. The organization of this paper is as followings. Section II presents background concept and theory behind an online interactive whiteboard. Section III proposes an overview of the system. Section IV discusses design consideration. Section V presents the specification of the design framework in application layer. Finally, the summary of the work is given in Section VI.
+A military operation involves common three-step process; planning, preparing, and execute. 
+%%
+To accomplish the mission, a commander and his supporting staffs must drive the operation processes through understanding, visualizing, describing, directing, and assessing \cite{AA}. 
+%%
+A mission planner is a tool to help a commander and staffs utilizing the those operation processes. 
+%%
+The use of online interactive whiteboard as mission planning tool can make operation be more effective. 
+%%
+An online interactive whiteboard is a device or a program that allows participants from different locations to share the same whiteboard screen. 
+%%
+The participants can change content of the screen and in addition the updated screen can be distributed among the participant in real-time.  
+%% 
+More over, participants can create common understanding of the operation using online interactive whiteboard. 
+%%
+An online interactive whiteboard provides visualization for situation understanding and determining desire goal. 
+%%
+An operation can be described to all participants to shared understanding and purpose using the online interactive whiteboard. 
+%%
+A commander may use an online interactive whiteboard to direct the mission by establishing an intent, setting objectives, and issuing clear tasks to subordinate units. 
+%%
+An online interactive whiteboard provides an overview of the plan to ease the assessment process of the plan. 
+%%
+The participants should be able to join a discussion, leave a discussion, and add information to the whiteboard while always having an up-to-date image of the current whiteboard. 
+%%
+An online interactive whiteboard is a network application or device, where the information is exchanged globally via Internet or locally LAN. 
+%%
+The online interactive whiteboard systems have been extensively used in the classrooms and civilian meeting rooms depending on public networks. 
+%%
+The military application operates in different networks designed specifically for military operation. 
+%%
+Due to limitation of military networks in terms of security, frequency, bandwidth, and computational power of the equipment, the design of an online interactive whiteboard require a novel approach.
+%% 
+This paper introduces a novel online interactive whiteboard design framework that specifically aim at the military application over Internet. 
+%%
+The organization of this paper is as followings. Section II presents background concept and theory behind an online interactive whiteboard. Section III proposes an overview of the system. Section IV discusses design consideration. Section V presents the specification of the design framework in application layer. Finally, the summary of the work is given in Section VI.
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Background}
-\subsection{Mission Planner}
-Mission planning is an art that requires an in-depth understanding of numerous critical elements or factors that may impact the mission and an assessment of how those elements or factors can be either negated, overcome or exploited to give the advantage it requires in the execution of the mission. The role of on-going real-time intelligence plays a crucial role in the planning of the mission. It is also this intelligence that will ultimately determine the mission-profile. The mission-profile, in turn, will determine the amount of manpower, weapons, ammunition, the phases of war, tactics and so forth that will be followed. \cite{AB}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-Planning is a vital component for success of any mission. Team leaders must be allowed to display flexibility within the overall plan and, in turn, must develop their own plans at their level. The ultimate aim of planning is to ensure the correct men, correctly equipped, are at the right time and place to achieve the mission. This requires constant coordination between the various elements that will partake in the execution of the plan. In turn, casualties will be reduced.  
+\subsection{Mission Planner}
+An mission planning is an art that requires an in-depth understanding of numerous critical elements or factors that may impact the mission and an assessment of how those elements or factors can be either negated, overcome or exploited to give the advantage it requires in the execution of the mission. 
+%%
+The role of on-going real-time intelligence plays a crucial role in the planning of the mission. 
+%%
+It is also this intelligence that will ultimately determine the mission-profile. 
+%%
+The mission-profile, in turn, will determine the amount of manpower, weapons, ammunition, the phases of war, tactics, etc. \cite{AB}.
+
+Planning is a vital component for success of any mission. Team leaders must be allowed to display flexibility within the overall plan and, in turn, must develop their own plans at their level. 
+%%
+The ultimate aim of planning is to ensure the correct men, correctly equipped, are at the right time and place to achieve the mission. 
+%%
+This requires constant coordination between the various elements that will partake in the execution of the plan. In turn, casualties will be reduced. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{Interactive Whiteboard}
 Interactive whiteboard is a device or a computer program providing interactive display. Typically an interactive whiteboard contains a sensor device that capture the movement on the whiteboard’s screen. The captured movements are then processed by the computer, which can be resided in whiteboard or as separated device. The processed movement then is visualized in screen and can interact with each object on screen. The networking of interactive whiteboard can provide corporative interaction between presenter and audiences. Interactive whiteboard is a technology that assists teachers, trainers, or meeting leaders to interact with the audiences. In some classrooms, interactive whiteboards have replaced traditional whiteboard. Interactive whiteboard can be applied to the military's mission planning for real-time mission planning that can be distributed to all involved units.
+
 \begin{figure*}[t]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{system.png}
@@ -71,6 +130,8 @@ Interactive whiteboard is a device or a computer program providing interactive d
 \label{fig:1}
 \end{center}
 \end{figure*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{TCP/IP Model}
 TCP/IP model or Internet model is the networking model and communications protocols used on the internet. TCP/IP model specifies how data should be transmitted and received on the internet. The model is organised into four abstraction layers, in which each layer contains related protocols according to involved networking functionalities \cite{RFC1122}\cite{RFC1123}.  The layers of the TCP/IP model are application layer, transport layer, internet layer, and link layer. The types of services performed and protocols used at each layer within the TCP/IP model are described in more detail in Table \ref{tab:1}. Application layer provides process-to-process application data exchange. Transport layer handles host-to-host communication. Internet layer establishes internetworking between networks. Link layer defines how data is physically sent and received over single link. This paper proposes the design framework for an online interactive whiteboard that specifies suitable protocols for each layer in TCP/IP model.
 \begin{table}[h]
@@ -146,7 +207,8 @@ Transport Layer performs similar functions to the Network layer in controlling t
 
 SCTP operation is similar to TCP, but the characteristic of the data is similar to the one in UDP. SCTP is the message-oriented protocol, while TCP is the stream-oriented protocol. It supports many mandatory features including multi-homing, multi-streaming, three delivery modes (ordered delivery, unordered delivery, and partially ordered), selective acknowledgement support (SACK), heartbeat keep-alive mechanism and DoS protection. The data in SCTP, or SCTP packet, will be identified by IP address. Each SCTP packet consists of header and chucks, and is divided into many small parts. 
 \subsection{Internet Layer}
-The existing internet connection will be used as the backbone network. The application should support both IPv4 and IPv6. IPv6 is already backward compatible with IPv4, provided that special techniques are used. To support IPv4/IPv6 compatibility, a scheme was developed to allow IPv4 addresses to be embedded within the IPv6 address structure. This method takes regular IPv4 addresses and puts them in a special IPv6 format so they are recognized as being IPv4 addresses by certain IPv6 devices.Since the IPv6 address space is so much bigger than that of IPv4, embedding the latter within the former is easy; it's like tucking a compact sedan into the hold of a cargo ship. The embedding address space is part of the reserved address block whose addresses begin with eight zero bits, but only a relatively small part of it. Two different embedding formats are used. Both have zeroes for the first 80 bits of the address, and put the embedded IPv4 address into the last 32 bits of the IPv6 address format. They differ on the value of the 16 remaining bits in between (bits 81 to 96, counting from the left). These embedding techniques are already implemented in most existing network devices and operating system. Therefore, there should not be any problem whether IPv4 or IPv6 is used.
+The existing internet connection will be used as the backbone network. The application should support both IPv4 and IPv6. IPv6 is already backward compatible with IPv4, provided that special techniques are used. To support IPv4/IPv6 compatibility, a scheme was developed to allow IPv4 addresses to be embedded within the IPv6 address structure. This method takes regular IPv4 addresses and puts them in a special IPv6 format so they are recognized as being IPv4 addresses by certain IPv6 devices.
+Since the IPv6 address space is so much bigger than that of IPv4, embedding the latter within the former is easy; it's like tucking a compact sedan into the hold of a cargo ship. The embedding address space is part of the reserved address block whose addresses begin with eight zero bits, but only a relatively small part of it. Two different embedding formats are used. Both have zeroes for the first 80 bits of the address, and put the embedded IPv4 address into the last 32 bits of the IPv6 address format. They differ on the value of the 16 remaining bits in between (bits 81 to 96, counting from the left). These embedding techniques are already implemented in most existing network devices and operating system. Therefore, there should not be any problem whether IPv4 or IPv6 is used.
 \subsection{Input and Output Device}
 A touch screen can be used as an interface device for input and output data. It is basically the device that can be use as both the input, as mouse or keyboard, and output, as the normal display monitor. The main component of the touch screen is the contact sensor under the control board which will analyze the signal received from the sensor for the exact coordination of the contact place. 
 
@@ -177,11 +239,29 @@ Whiteboard manager is the member who requests for the new whiteboard allocation.
 Participant can join the whiteboard by invitation from whiteboard manager or authorized request for joining the whiteboard. Participants can leave the whiteboard at anytime during whiteboard session and they can join again with authorization from the whiteboard manager. Participants are eligible to update content of whiteboard just like whiteboard manager.
 
 \subsection{Application Process}
-The server application should always be running and ready to serve client application. When the client application is started, it create socket for communication with the server. The communication with system has not been established yet.  Client needs to login to establish a connection by sending authorization request message to the server. When the login information is authorized by the server, the server registers the client along with its socket address and sends the acknowledgement message back to client. A client is now ready to send or receive message from server. A client socket stays open until client logs out.After logging in to the system, clients are able to create whiteboard. The client, who creates whiteboard, becomes the whiteboard manager of that whiteboard session. The process of creating whiteboard is initiated by the client side. The client sends a request to initiate whiteboard. Upon receiving the request, the server checks whether or not this client involves in any other whiteboard session. If so, the request is rejected. If not, the request is accepted and the server allocates database space for recording whiteboard history. This space contains information about whiteboard session ID, manager ID, participant ID, and synchronization history. This feature enable playback of the old whiteboard sessions. After allocating space for whiteboard session, the server sends acknowledgement to the client. The client changes its role to whiteboard manager.
+The server application should always be running and ready to serve client application. When the client application is started, it create socket for communication with the server. The communication with system has not been established yet.  Client needs to login to establish a connection by sending authorization request message to the server. When the login information is authorized by the server, the server registers the client along with its socket address and sends the acknowledgement message back to client. A client is now ready to send or receive message from server. A client socket stays open until client logs out.
+After logging in to the system, clients are able to create whiteboard. The client, who creates whiteboard, becomes the whiteboard manager of that whiteboard session. The process of creating whiteboard is initiated by the client side. The client sends a request to initiate whiteboard. Upon receiving the request, the server checks whether or not this client involves in any other whiteboard session. If so, the request is rejected. If not, the request is accepted and the server allocates database space for recording whiteboard history. This space contains information about whiteboard session ID, manager ID, participant ID, and synchronization history. This feature enable playback of the old whiteboard sessions. After allocating space for whiteboard session, the server sends acknowledgement to the client. The client changes its role to whiteboard manager.
 Whiteboard manager has an ability to invite other clients to the whiteboard session. Clients that are eligible for invitation must have already been authorized by the server through the login process and must not have involved in any whiteboard session. The available client lists are distributed to the manager by the server. The invitation process starts when manager sends the invitation message to one or more clients. It is not peer-to-peer communication. The invitation message is received by the server first. The server searches for socket address specific for each destination. Then, it forwards the invitation message to all destinations. Upon receiving the invitation message, the clients have an option to accept or reject invitation. The reply message is sent back to the server. The server registers the client to whiteboard session and sends notification message to the manager, if the answer is yes. If the answer is no, the server just sends notification message to the manager. The clients accepting invitation becomes participants in whiteboard session.
-A whiteboard session is not blinded from other clients. Clients in the system can see a list of whiteboard session, but cannot see what is inside. The clients are able to join any whiteboard session with permission from the corresponding whiteboard manager. Client currently logged into the system can send the joining request to the manager. Just like invitation message, joining message is not peer-to-peer communication. The message is sent to server, then server forward message to the manager. After receiving joining request, the manager decides on accepting or rejecting the request. The reply message is sent out to server. The server checks whether the answer is yes or no. If the answer is yes, then the server registers requesting client to the whiteboard session, and notifies both new participant and the manager. The whiteboard screens on new participants? application are synchronized to the up-to-date screen using whiteboard synchronization history stored in the server.Participants can leave the whiteboard session anytime by sending leaving request to the server. Server unregisters participant who is sending leaving request from whiteboard session. Then, the server sends notify message to both leaving client and manager. Leaving client can request joining the whiteboard session again as long as the session still running. Leaving clients are not terminated from the system. To be terminated from system, client must log out from system. If the server crashes, then all clients? connections will be terminated. Figure  illustrate the overall process of the online interactive whiteboard   What if the client never left the pen out of the screen? The stroke samples will be indefinitely long. This is a waste because these stroke samples are not useful information. To overcome this problem, the client application sets the timer when stroke samples start to be on the same position for many samples. When the timer ends and the position does not change, then the terminate message will be sent to end the current stroke. With multi-streaming capability of SCTP, multiple strokes can be sent simultaneously.
+A whiteboard session is not blinded from other clients. Clients in the system can see a list of whiteboard session, but cannot see what is inside. The clients are able to join any whiteboard session with permission from the corresponding whiteboard manager. Client currently logged into the system can send the joining request to the manager. Just like invitation message, joining message is not peer-to-peer communication. The message is sent to server, then server forward message to the manager. After receiving joining request, the manager decides on accepting or rejecting the request. The reply message is sent out to server. The server checks whether the answer is yes or no. If the answer is yes, then the server registers requesting client to the whiteboard session, and notifies both new participant and the manager. The whiteboard screens on new participants? application are synchronized to the up-to-date screen using whiteboard synchronization history stored in the server.
+Participants can leave the whiteboard session anytime by sending leaving request to the server. Server unregisters participant who is sending leaving request from whiteboard session. Then, the server sends notify message to both leaving client and manager. Leaving client can request joining the whiteboard session again as long as the session still running. Leaving clients are not terminated from the system. To be terminated from system, client must log out from system. If the server crashes, then all clients? connections will be terminated. Figure  illustrate the overall process of the online interactive whiteboard
+   What if the client never left the pen out of the screen? The stroke samples will be indefinitely long. This is a waste because these stroke samples are not useful information. To overcome this problem, the client application sets the timer when stroke samples start to be on the same position for many samples. When the timer ends and the position does not change, then the terminate message will be sent to end the current stroke. With multi-streaming capability of SCTP, multiple strokes can be sent simultaneously.
+
 \section{Summary}
-An online interactive whiteboard for military application is based on IP network technologies. The system will operated in client-server model. SCTP is selected as a transport layer, because it provides many features that are suitable for multi-stream application. The application should provide the information closed to real-time. Application processes in both client and server have been discussed. In addition, data messages and transmission scheme for are discussed and presented, in which should give enough information for high level programmer for future implementation of the system. Other consideration such as security and network difficulties are included as well. An online interactive whiteboard will be useful in future military operation where real-time distribution and updating of plan is crucial.
+An online interactive whiteboard for military application is based on IP network technologies. 
+%%
+The proposed system will be operated in client-server model. 
+%%
+The SCTP is selected as a transport layer, because it provides many features suitable for multi-stream application. 
+%%
+The application can provide the information closed to real-time. 
+%%
+In this paper, the application processes in both client and server have been discussed. 
+%%
+In addition, data messages and transmission scheme are discussed and presented, which can give enough information for high level programmer for future implementation of the system. 
+%%
+Other consideration such as security and network difficulties are included as well. 
+%%
+An online interactive whiteboard will be useful in future military operation where real-time distribution and updating of plan is crucial.
 
 
  \begin{thebibliography}{1}
