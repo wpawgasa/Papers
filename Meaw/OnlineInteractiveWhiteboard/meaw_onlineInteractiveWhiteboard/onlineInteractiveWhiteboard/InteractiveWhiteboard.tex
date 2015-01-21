@@ -111,17 +111,36 @@ The role of on-going real-time intelligence plays a crucial role in the planning
 %%
 It is also this intelligence that will ultimately determine the mission-profile. 
 %%
-The mission-profile, in turn, will determine the amount of manpower, weapons, ammunition, the phases of war, tactics, etc. \cite{AB}.
-
-Planning is a vital component for success of any mission. Team leaders must be allowed to display flexibility within the overall plan and, in turn, must develop their own plans at their level. 
+The mission-profile, in turn, will determine the amount of manpower, weapons, ammunition, the phases of war, tactics, etc \cite{AB}.
 %%
-The ultimate aim of planning is to ensure the correct men, correctly equipped, are at the right time and place to achieve the mission. 
+In fact , planning is considered a vital component for success of any mission. 
 %%
-This requires constant coordination between the various elements that will partake in the execution of the plan. In turn, casualties will be reduced. 
+A Team leader must be allowed to display flexibility within the overall plan and, in turn, must develop their own plans at their level. 
+%%
+The ultimate aim of planning is to ensure that the correct men, correctly equipped, are at the right time and place to achieve the mission. 
+%%
+This requires constant coordination between the various elements that will partake in the execution of the plan. 
+%%
+With this concept, the casualties can be reduced. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{Interactive Whiteboard}
-Interactive whiteboard is a device or a computer program providing interactive display. Typically an interactive whiteboard contains a sensor device that capture the movement on the whiteboard’s screen. The captured movements are then processed by the computer, which can be resided in whiteboard or as separated device. The processed movement then is visualized in screen and can interact with each object on screen. The networking of interactive whiteboard can provide corporative interaction between presenter and audiences. Interactive whiteboard is a technology that assists teachers, trainers, or meeting leaders to interact with the audiences. In some classrooms, interactive whiteboards have replaced traditional whiteboard. Interactive whiteboard can be applied to the military's mission planning for real-time mission planning that can be distributed to all involved units.
+
+An interactive whiteboard is a device or a computer program providing interactive display.
+%% 
+Typically an interactive whiteboard contains a sensor device that capture the movement on the whiteboard’s screen. 
+%%
+The captured movements are then processed by the computer, which can be resided in whiteboard or as separated device. 
+%%
+Consequently, the processed movement is visualized in screen and can interact with each object on screen. 
+%%
+The networking of interactive whiteboard can provide corporative interaction between the presenters and audiences. 
+%%
+This interactive whiteboard is a technology that can assist teachers, trainers, or meeting leaders to efficiently interact with the audiences. 
+%%
+In some classrooms, interactive whiteboards have been replaced traditional whiteboard. 
+%%
+From this point of view, the interactive whiteboard can be applied to the military's mission planning for real-time mission planning that can be distributed to all involved units.
 
 \begin{figure*}[t]
 \begin{center}
@@ -133,7 +152,23 @@ Interactive whiteboard is a device or a computer program providing interactive d
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \subsection{TCP/IP Model}
-TCP/IP model or Internet model is the networking model and communications protocols used on the internet. TCP/IP model specifies how data should be transmitted and received on the internet. The model is organised into four abstraction layers, in which each layer contains related protocols according to involved networking functionalities \cite{RFC1122}\cite{RFC1123}.  The layers of the TCP/IP model are application layer, transport layer, internet layer, and link layer. The types of services performed and protocols used at each layer within the TCP/IP model are described in more detail in Table \ref{tab:1}. Application layer provides process-to-process application data exchange. Transport layer handles host-to-host communication. Internet layer establishes internetworking between networks. Link layer defines how data is physically sent and received over single link. This paper proposes the design framework for an online interactive whiteboard that specifies suitable protocols for each layer in TCP/IP model.
+
+A TCP/IP model or Internet model is a networking model and communications protocols that commonly used on the Internet. 
+%%
+Normally, TCP/IP model specifies how data should be transmitted and received on the internet. The model is organised into four abstraction layers, in which each layer contains related protocols according to involved networking functionalities \cite{RFC1122, RFC1123}.
+%%
+The layers of the TCP/IP model are application layer, transport layer, internet layer, and link layer. 
+%%
+The types of services performed and protocols used at each layer within the TCP/IP model are described in more detail in Table \ref{tab:1}. 
+%%
+Application layer provides process-to-process application data exchange. 
+%%
+Transport layer handles host-to-host communication. Internet layer establishes internetworking between networks. 
+%%
+Link layer defines how data is physically sent and received over single link. 
+%%
+This paper proposes the design framework for an online interactive whiteboard that specifies suitable protocols for each layer in TCP/IP model.
+
 \begin{table}[h]
   \renewcommand{\arraystretch}{2}
   \renewcommand{\tabcolsep}{2mm}
@@ -152,7 +187,11 @@ TCP/IP model or Internet model is the networking model and communications protoc
   \caption{Services and Protocols of TCP/IP Model}
   \label{tab:1}
 \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{System Overview}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 The online interactive whiteboard is the electronic whiteboard with the client-server program, where the information drawn on whiteboard is exchanged through internet or LAN in real-time. There will be two part of application: client application and server application. The application works in client-server manner.  Figure \ref{fig:1} illustrates the structure of system.  
 \subsection{Server}
 The server is responsible for the processing request and distributing the up-to-date whiteboard screen in real-time. The server is responsible for initializing new whiteboard session when there is a request and handles invitation, joining and leaving requests to the whiteboard. The server also contains database storing information about system members and whiteboard session history. It also handles the authentication to the system. The server should be able to handle multiple requests and distribute information in shortest time, so that the system meet real-time need in the military operation.

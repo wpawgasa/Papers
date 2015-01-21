@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.7.21)  21 JAN 2015 19:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.7.21)  21 JAN 2015 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -216,7 +216,7 @@ Missing character: There is no ™ in font ptmr7t!
 
 ]
 
-LaTeX Warning: File `system.png' not found on input line 128.
+LaTeX Warning: File `system.png' not found on input line 147.
 
 
 ! Package pdftex.def Error: File `system.png' not found.
@@ -225,83 +225,83 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 ...graphics[width=0.7\textwidth]{system.png}
+l.147 ...graphics[width=0.7\textwidth]{system.png}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 128.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 147.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 []|\OT1/ptm/m/n/8 HTTP, Tel-net,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 \OT1/ptm/m/n/8 FTP, TFTP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 []|\OT1/ptm/m/n/8 Provides com-mu-ni-ca-tion ses-sion
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 150--150
+Underfull \hbox (badness 2707) in paragraph at lines 185--185
 \OT1/ptm/m/n/8 De-fines the level of ser-vice and
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 150--150
+Underfull \hbox (badness 2334) in paragraph at lines 185--185
 []|\OT1/ptm/m/n/8 Packages data into IP data-grams,
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 150--150
+Underfull \hbox (badness 1365) in paragraph at lines 185--185
 []|\OT1/ptm/m/n/8 IP, ICMP, ARP,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 []|\OT1/ptm/m/n/8 Ethernet, To-ken
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 \OT1/ptm/m/n/8 Ring, FDDI,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 \OT1/ptm/m/n/8 X.25, Frame
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 \OT1/ptm/m/n/8 Re-lay, RS-232,
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 150--150
+Underfull \hbox (badness 10000) in alignment at lines 185--185
 [][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 150--152
+Overfull \hbox (6.0pt too wide) in paragraph at lines 185--187
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 
-LaTeX Warning: File `stroke_scheme.png' not found on input line 171.
+LaTeX Warning: File `stroke_scheme.png' not found on input line 210.
 
 
 ! Package pdftex.def Error: File `stroke_scheme.png' not found.
@@ -310,14 +310,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 ...s[width=0.5\textwidth]{stroke_scheme.png}
+l.210 ...s[width=0.5\textwidth]{stroke_scheme.png}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 171--172
+Overfull \hbox (6.0pt too wide) in paragraph at lines 210--211
  [] 
  []
 
@@ -325,7 +325,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 171--172
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 202--204
+Overfull \hbox (6.0pt too wide) in paragraph at lines 241--243
  [][] 
  []
 
@@ -338,7 +338,7 @@ Underfull \vbox (badness 1137) has occurred while \output is active []
 <iw_tcpip.png, id=17, 182.1204pt x 338.2236pt>
 File: iw_tcpip.png Graphic file (type png)
 <use iw_tcpip.png>
-Package pdftex.def Info: iw_tcpip.png used on input line 220.
+Package pdftex.def Info: iw_tcpip.png used on input line 259.
 (pdftex.def)             Requested size: 154.80157pt x 287.50174pt.
 
 ! LaTeX Error: File `process' not found.
@@ -347,7 +347,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 ...udegraphics[width=0.8\textwidth]{process}
+l.266 ...udegraphics[width=0.8\textwidth]{process}
                                                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -359,7 +359,7 @@ nteractiveWhiteboard/onlineInteractiveWhiteboard/iw_tcpip.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [5]
-Overfull \hbox (16.33324pt too wide) in paragraph at lines 271--272
+Overfull \hbox (16.33324pt too wide) in paragraph at lines 310--311
 \OT1/ptm/m/n/8 http://eebenbarlowsmilitaryandsecurityblog.blogspot.com/2009/06/
 importance-
  []
@@ -391,7 +391,7 @@ Here is how much of TeX's memory you used:
  5775 multiletter control sequences out of 15000+600000
  39312 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 37i,10n,23p,1224b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,23p,1224b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-
@@ -400,7 +400,7 @@ s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
 Output written on /Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboar
 d/meaw_onlineInteractiveWhiteboard/onlineInteractiveWhiteboard/InteractiveWhite
-board.pdf (6 pages, 105337 bytes).
+board.pdf (6 pages, 105415 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
