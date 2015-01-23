@@ -1,22 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.18)  23 JAN 2015 09:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.7.21)  23 JAN 2015 16:22
 entering extended mode
-**InteractiveWhiteboard.tex
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlineInt
+eractiveWhiteboard/onlineInteractiveWhiteboard/InteractiveWhiteboard.tex
 
-(C:\Users\Administrator\Documents\GitHub\Papers\Meaw\OnlineInteractiveWhiteboar
-d\meaw_onlineInteractiveWhiteboard\onlineInteractiveWhiteboard\InteractiveWhite
-board.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\ieeetran\IEEEtran.cls"
+(/Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlineInte
+ractiveWhiteboard/onlineInteractiveWhiteboard/InteractiveWhiteboard.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -27,7 +20,7 @@ Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -101,42 +94,33 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count91
 \@IEEEtranrubishbin=\box26
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count92
 ))
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
-Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen119
 \extrarowheight=\dimen120
@@ -152,13 +136,14 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@cols=\count93
 \TX@ftn=\toks17
 )
-(C:\Users\Administrator\Documents\GitHub\Papers\Meaw\OnlineInteractiveWhiteboar
-d\meaw_onlineInteractiveWhiteboard\onlineInteractiveWhiteboard\InteractiveWhite
-board.aux
+(/Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlineInte
+ractiveWhiteboard/onlineInteractiveWhiteboard/InteractiveWhiteboard.aux
 
 LaTeX Warning: Label `tab:1' multiply defined.
 
 )
+\openout1 = `InteractiveWhiteboard.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -171,7 +156,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count94
 \scratchdimen=\dimen126
@@ -184,17 +169,53 @@ LaTeX Font Info:    ... okay on input line 14.
 \MPnumerator=\count98
 \makeMPintoPDFobject=\count99
 \everyMPtoPDFconversion=\toks19
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-<iw_system_overview.png, id=9, 699.5736pt x 520.344pt>
+] <iw_system_overview.png, id=10, 699.5736pt x 520.344pt>
 File: iw_system_overview.png Graphic file (type png)
-
 <use iw_system_overview.png>
 Package pdftex.def Info: iw_system_overview.png used on input line 147.
 (pdftex.def)             Requested size: 361.19843pt x 268.659pt.
@@ -263,9 +284,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-<iw_stroke_transmission.png, id=10, 433.1382pt x 209.1012pt>
+<iw_stroke_transmission.png, id=11, 433.1382pt x 209.1012pt>
 File: iw_stroke_transmission.png Graphic file (type png)
-
 <use iw_stroke_transmission.png>
 Package pdftex.def Info: iw_stroke_transmission.png used on input line 259.
 (pdftex.def)             Requested size: 258.0pt x 124.55235pt.
@@ -279,7 +299,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2]
 ! Undefined control sequence.
-l.280 ...ng the initial information is called \emp
+l.281 ...ng the initial information is called \emp
                                                   {Encrypted data or data En...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -288,41 +308,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 315--317
+Overfull \hbox (6.0pt too wide) in paragraph at lines 316--318
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <C:/Users/Administrator/Documents/GitHub/Papers/Meaw/OnlineInteractiveWhiteb
-oard/meaw_onlineInteractiveWhiteboard/onlineInteractiveWhiteboard/iw_system_ove
-rview.png (PNG copy)> <C:/Users/Administrator/Documents/GitHub/Papers/Meaw/Onli
-neInteractiveWhiteboard/meaw_onlineInteractiveWhiteboard/onlineInteractiveWhite
-board/iw_stroke_transmission.png>]
-<iw_tcpip.png, id=19, 182.1204pt x 338.2236pt>
+[3 </Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlineI
+nteractiveWhiteboard/onlineInteractiveWhiteboard/iw_system_overview.png (PNG co
+py)> </Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlin
+eInteractiveWhiteboard/onlineInteractiveWhiteboard/iw_stroke_transmission.png>]
+<iw_tcpip.png, id=20, 182.1204pt x 338.2236pt>
 File: iw_tcpip.png Graphic file (type png)
- <use iw_tcpip.png>
-Package pdftex.def Info: iw_tcpip.png used on input line 347.
+<use iw_tcpip.png>
+Package pdftex.def Info: iw_tcpip.png used on input line 376.
 (pdftex.def)             Requested size: 154.80157pt x 287.50174pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<process.png, id=20, 716.9184pt x 631.6398pt>
+<process.png, id=21, 716.9184pt x 631.6398pt>
 File: process.png Graphic file (type png)
- <use process.png>
-Package pdftex.def Info: process.png used on input line 354.
+<use process.png>
+Package pdftex.def Info: process.png used on input line 383.
 (pdftex.def)             Requested size: 412.80157pt x 363.70088pt.
- [4 <C:/Users/Administrator/Documents/GitHub/Papers/Meaw/OnlineInteractiveWhite
-board/meaw_onlineInteractiveWhiteboard/onlineInteractiveWhiteboard/iw_tcpip.png
- (PNG copy)>]
+[4 </Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlineI
+nteractiveWhiteboard/onlineInteractiveWhiteboard/iw_tcpip.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <C:/Users/Administrator/Documents/GitHub/Papers/Meaw/OnlineInteractiveWhite
-board/meaw_onlineInteractiveWhiteboard/onlineInteractiveWhiteboard/process.png 
-(PNG copy)>]
-Overfull \hbox (16.33324pt too wide) in paragraph at lines 409--410
+[5 </Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlineI
+nteractiveWhiteboard/onlineInteractiveWhiteboard/process.png (PNG copy)>]
+Overfull \hbox (16.33324pt too wide) in paragraph at lines 572--573
 \OT1/ptm/m/n/8 http://eebenbarlowsmilitaryandsecurityblog.blogspot.com/2009/06/
 importance-
  []
@@ -339,28 +355,31 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [6]
-(C:\Users\Administrator\Documents\GitHub\Papers\Meaw\OnlineInteractiveWhiteboar
-d\meaw_onlineInteractiveWhiteboard\onlineInteractiveWhiteboard\InteractiveWhite
-board.aux)
+(/Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboard/meaw_onlineInte
+ractiveWhiteboard/onlineInteractiveWhiteboard/InteractiveWhiteboard.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1948 strings out of 493921
- 31041 string characters out of 3147257
- 90972 words of memory out of 3000000
- 5259 multiletter control sequences out of 15000+200000
- 38797 words of font info for 72 fonts, out of 3000000 for 9000
- 844 hyphenation exceptions out of 8191
- 27i,9n,19p,1101b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
-s/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on InteractiveWhiteboard.pdf (6 pages, 469015 bytes).
+ 2310 strings out of 493117
+ 38143 string characters out of 6135433
+ 105060 words of memory out of 5000000
+ 5757 multiletter control sequences out of 15000+600000
+ 38797 words of font info for 72 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 37i,9n,23p,634b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on /Users/Arm/Desktop/Papers_ODC/Meaw/OnlineInteractiveWhiteboar
+d/meaw_onlineInteractiveWhiteboard/onlineInteractiveWhiteboard/InteractiveWhite
+board.pdf (6 pages, 464545 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

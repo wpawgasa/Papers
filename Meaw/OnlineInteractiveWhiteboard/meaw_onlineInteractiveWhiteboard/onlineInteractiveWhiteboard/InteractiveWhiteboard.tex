@@ -13,7 +13,7 @@
 \usepackage{tabularx}
 \begin{document}
 
-\title{An Online Interactive Whiteboard \\for Military Applications}
+\title{An Online Interactive Whiteboard \\for Military Applications: a conceptual design}
 
 
 % author names and affiliations
@@ -259,7 +259,8 @@ Clients use this stroke stream to reconstruct the stroke at its own screen.
 \includegraphics[width=0.5\textwidth]{iw_stroke_transmission.png}
 \caption{Stroke transmission scheme}
 \label{fig:2}
-\end{center}
+\end
+{center}
 \end{figure}
 
 In addition to whiteboard synchronization message, there is a system authorization message used to establish and terminate connection between single client and the server, whiteboard initialization message that is responsible for initiating whiteboard space and session to be used among specific group, invitation message that takes care of sending whiteboard invitation to connected user, and joining and leaving message that handles joining request to existing whiteboard session.
@@ -330,17 +331,45 @@ Each SCTP packet consists of header and chucks, and is divided into many small p
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Internet Layer}
-The existing internet connection will be used as the backbone network. The application should support both IPv4 and IPv6. IPv6 is already backward compatible with IPv4, provided that special techniques are used. To support IPv4/IPv6 compatibility, a scheme was developed to allow IPv4 addresses to be embedded within the IPv6 address structure. This method takes regular IPv4 addresses and puts them in a special IPv6 format so they are recognized as being IPv4 addresses by certain IPv6 devices.
-Since the IPv6 address space is so much bigger than that of IPv4, embedding the latter within the former is easy; it's like tucking a compact sedan into the hold of a cargo ship. The embedding address space is part of the reserved address block whose addresses begin with eight zero bits, but only a relatively small part of it. Two different embedding formats are used. Both have zeroes for the first 80 bits of the address, and put the embedded IPv4 address into the last 32 bits of the IPv6 address format. They differ on the value of the 16 remaining bits in between (bits 81 to 96, counting from the left). These embedding techniques are already implemented in most existing network devices and operating system. Therefore, there should not be any problem whether IPv4 or IPv6 is used.
+
+The existing Internet connection will be used as the backbone network. 
+%%
+The application should support both IPv4 and IPv6. 
+%%
+In fact, IPv6 is already backward compatible with IPv4, provided that special techniques are used.
+%%
+To support IPv4/IPv6 compatibility, a scheme was developed to allow IPv4 addresses to be embedded within the IPv6 address structure. 
+%%
+This method takes regular IPv4 addresses and puts them in a special IPv6 format so they are recognized as being IPv4 addresses by certain IPv6 devices.
+%%
+Since the IPv6 address space is so much bigger than that of IPv4, embedding the latter within the former is easy; it's like tucking a compact sedan into the hold of a cargo ship. 
+%%
+The embedding address space is part of the reserved address block whose addresses begin with eight zero bits, but only a relatively small part of it.
+%%
+Two different embedding formats are used. 
+%%
+Both have zeros for the first 80 bits of the address, and put the embedded IPv4 address into the last 32 bits of the IPv6 address format. 
+%%
+They differ on the value of the 16 remaining bits in between (bits 81 to 96, counting from the left). 
+%%
+These embedding techniques are already implemented in most existing network devices and operating system. Therefore, there should not be any problem whether IPv4 or IPv6 is used.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Input and Output Device}
-A touch screen can be used as an interface device for input and output data. It is basically the device that can be use as both the input, as mouse or keyboard, and output, as the normal display monitor. The main component of the touch screen is the contact sensor under the control board which will analyze the signal received from the sensor for the exact coordination of the contact place. 
+
+A touch screen can be used as an interface device for input and output data. 
+%%
+It is basically the device that can be use as both the input, as mouse or keyboard, and output, as the normal display monitor. 
+%%
+The main component of the touch screen is the contact sensor under the control board which will analyze the signal received from the sensor for the exact coordination of the contact place. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Specification of Online Interactive Whiteboard Application}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-With the design consideration proposed in previous section, figure \ref{fig:4} summarizes the protocol applied to each layer of TCP/IP model. This section gives detailed specification of application protocol for the online interactive whiteboard system.
+
+With the design consideration proposed in previous section, figure \ref{fig:4} summarizes the protocol applied to each layer of TCP/IP model. 
+%%
+This section gives detailed specification of application protocol for the online interactive whiteboard system.
  
  \begin{figure}[h]
 \begin{center}
@@ -359,29 +388,163 @@ With the design consideration proposed in previous section, figure \ref{fig:4} s
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Application Roles}
+
 Application can take on three roles: The server role operates on server application, the manager and participant roles operate on client application
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Server Role}
-The server is responsible for the processing whiteboard and distributing the up-to-date whiteboard in real-time. The server is responsible for initializing new whiteboard session when there is a request and handles invitation, joining and leaving requests to the whiteboard. The server receives the new whiteboard details from participants and synchronizing new details to all participants. All participants should be synchronized to the same up-to-date whiteboard. The server does not actually distribute the whiteboard screen, but it distributes the action done by participant. Clients received this distributed information will update their own whiteboard accordingly. The server also contains database storing information about system members and whiteboard session history. It also handles the authentication to the system. The server should be able to handle multiple requests and distribute information in shortest time, so that the system is working as close as the real-time.
+
+The server is responsible for the processing of whiteboard and distributing the up-to-date whiteboard in real-time. 
+%%
+The server is responsible for initializing new whiteboard session when there is a request and handles invitation, joining and leaving requests to the whiteboard. 
+%%
+The server receives the new whiteboard details from participants and synchronizing new details to all participants. 
+%%
+All participants should be synchronized to the same up-to-date whiteboard. 
+%%
+The server does not actually distribute the whiteboard screen, but it distributes the action done by participant. 
+%%
+The clients received this distributed information can update their own whiteboard accordingly. 
+%%
+The server also contains database storing information about system members and whiteboard session history. 
+%%
+It also handles the authentication to the system. 
+%%
+The server should be able to handle multiple requests and distribute information in shortest time, so that the system is working as close as the real-time.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Manager Role}
-Whiteboard manager is the member who requests for the new whiteboard allocation. Whiteboard manager can invite other members to participate in whiteboard. He can authorize other members to join in the whiteboard. The whiteboard manager is the only one who can end the whiteboard session. Whiteboard manager is eligible to update content of whiteboard during whiteboard session at anytime
+
+A whiteboard manager is the member who requests for the new whiteboard allocation.
+%%
+This manager can invite other members to participate in whiteboard. 
+%%
+He can authorize other members to join in the whiteboard. 
+%%
+Consequently, a whiteboard manager is the only one who can end the whiteboard session. 
+%%
+The manager is eligible to update content of whiteboard during whiteboard session at anytime
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Participant Role}
-Participant can join the whiteboard by invitation from whiteboard manager or authorized request for joining the whiteboard. Participants can leave the whiteboard at anytime during whiteboard session and they can join again with authorization from the whiteboard manager. Participants are eligible to update content of whiteboard just like whiteboard manager.
+A participant can join the whiteboard by invitation from whiteboard manager or authorized request for joining the whiteboard. 
+%%
+In addition, the participants can leave the whiteboard at anytime during whiteboard session and they can join again with authorization from the whiteboard manager. 
+%%
+Finally, the participants are eligible to update content of whiteboard just like whiteboard manager.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Application Process}
-The server application should always be running and ready to serve client application. When the client application is started, it create socket for communication with the server. The communication with system has not been established yet.  Client needs to login to establish a connection by sending authorization request message to the server. When the login information is authorized by the server, the server registers the client along with its socket address and sends the acknowledgment message back to client. A client is now ready to send or receive message from server. A client socket stays open until client logs out.
-After logging in to the system, clients are able to create whiteboard. The client, who creates whiteboard, becomes the whiteboard manager of that whiteboard session. The process of creating whiteboard is initiated by the client side. The client sends a request to initiate whiteboard. Upon receiving the request, the server checks whether or not this client involves in any other whiteboard session. If so, the request is rejected. If not, the request is accepted and the server allocates database space for recording whiteboard history. This space contains information about whiteboard session ID, manager ID, participant ID, and synchronization history. This feature enable playback of the old whiteboard sessions. After allocating space for whiteboard session, the server sends acknowledgment to the client. The client changes its role to whiteboard manager.
-Whiteboard manager has an ability to invite other clients to the whiteboard session. Clients that are eligible for invitation must have already been authorized by the server through the login process and must not have involved in any whiteboard session. The available client lists are distributed to the manager by the server. The invitation process starts when manager sends the invitation message to one or more clients. It is not peer-to-peer communication. The invitation message is received by the server first. The server searches for socket address specific for each destination. Then, it forwards the invitation message to all destinations. Upon receiving the invitation message, the clients have an option to accept or reject invitation. The reply message is sent back to the server. The server registers the client to whiteboard session and sends notification message to the manager, if the answer is yes. If the answer is no, the server just sends notification message to the manager. The clients accepting invitation becomes participants in whiteboard session.
-A whiteboard session is not blinded from other clients. Clients in the system can see a list of whiteboard session, but cannot see what is inside. The clients are able to join any whiteboard session with permission from the corresponding whiteboard manager. Client currently logged into the system can send the joining request to the manager. Just like invitation message, joining message is not peer-to-peer communication. The message is sent to server, then server forward message to the manager. After receiving joining request, the manager decides on accepting or rejecting the request. The reply message is sent out to server. The server checks whether the answer is yes or no. If the answer is yes, then the server registers requesting client to the whiteboard session, and notifies both new participant and the manager. The whiteboard screens on new participants? application are synchronized to the up-to-date screen using whiteboard synchronization history stored in the server.
-Participants can leave the whiteboard session anytime by sending leaving request to the server. Server unregisters participant who is sending leaving request from whiteboard session. Then, the server sends notify message to both leaving client and manager. Leaving client can request joining the whiteboard session again as long as the session still running. Leaving clients are not terminated from the system. To be terminated from system, client must log out from system. If the server crashes, then all clients? connections will be terminated. Figure \ref{fig:4} illustrate the overall process of the online interactive whiteboard
 
-What if the client never left the pen out of the screen? The stroke samples will be indefinitely long. This is a waste because these stroke samples are not useful information. To overcome this problem, the client application sets the timer when stroke samples start to be on the same position for many samples. When the timer ends and the position does not change, then the terminate message will be sent to end the current stroke. With multi-streaming capability of SCTP, multiple strokes can be sent simultaneously.
+The server application should always be running and ready to serve client application.
+%%
+When the client application is started, it create socket for communication with the server. 
+%%
+The communication with system has not been established yet.  
+%%
+Client needs to login to establish a connection by sending authorization request message to the server. 
+%%
+When the login information is authorized by the server, the server registers the client along with its socket address and sends the acknowledgment message back to client. 
+%%
+A client is now ready to send or receive message from server. 
+%%
+Consequently, a client socket stays open until client logs out.
+%%
+After logging in to the system, clients are able to create whiteboard. 
+%%
+The client, who creates whiteboard, becomes the whiteboard manager of that whiteboard session. 
+%%
+The process of creating whiteboard is initiated by the client side. 
+%%
+The client sends a request to initiate whiteboard. 
+%%
+Upon receiving the request, the server checks whether or not this client involves in any other whiteboard session. 
+%%
+In the case of involvement, the request is rejected. 
+%%
+If not, the request is accepted and the server allocates database space for recording whiteboard history. 
+%%
+This space contains information about whiteboard session ID, manager ID, participant ID, and synchronization history. 
+%%
+This feature enable playback of the old whiteboard sessions. 
+%%
+After allocating space for whiteboard session, the server sends acknowledgment to the client. 
+%%
+Then the client changes its role to whiteboard manager.
+%%
+A whiteboard manager has an ability to invite other clients to the whiteboard session. 
+%%
+The clients that are eligible for invitation must have already been authorized by the server through the login process and must not have involved in any whiteboard session.
+%%
+The available client lists are distributed to the manager by the server. 
+%%
+The invitation process starts when manager sends the invitation message to one or more clients. It is not peer-to-peer communication. 
+%%
+The invitation message is received by the server first. 
+%%
+The server searches for socket address specific for each destination. 
+%%
+Then, it forwards the invitation message to all destinations. 
+%%
+Upon receiving the invitation message, the clients have an option to accept or reject invitation. 
+%%
+The reply message is sent back to the server. 
+%%
+The server registers the client to whiteboard session and sends notification message to the manager, if the answer is yes. 
+%%
+If the answer is no, the server just sends notification message to the manager. 
+%%
+The clients accepting invitation becomes participants in whiteboard session.
+%%
+A whiteboard session is not blinded from other clients. 
+%%
+Clients in the system can see a list of whiteboard session, but cannot see what is inside. 
+%%
+The clients are able to join any whiteboard session with permission from the corresponding whiteboard manager. 
+%%
+A client currently logged into the system can send the joining request to the manager. 
+%%
+Just like invitation message, joining message is not peer-to-peer communication. 
+%%
+The message is sent to server, then server forward message to the manager. 
+%%
+After receiving joining request, the manager decides on accepting or rejecting the request. 
+%%
+The reply message is sent out to server. 
+%%
+The server checks whether the answer is yes or no. 
+%%
+If the answer is yes, then the server registers requesting client to the whiteboard session, and notifies both new participant and the manager. 
+%%
+The whiteboard screens on new participants application are synchronized to the up-to-date screen using whiteboard synchronization history stored in the server.
+%%
+The participants can leave the whiteboard session anytime by sending leaving request to the server. 
+%%
+A server unregisters participant who is sending leaving request from whiteboard session.
+%%
+Then, the server sends notify message to both leaving client and manager. 
+%%
+A leaving client can request joining the whiteboard session again as long as the session still running. 
+%%
+The leaving clients are not terminated from the system. 
+%%
+To be terminated from system, client must log out from system. 
+%%
+If the server crashes, then all client connections are terminated. 
+%%
+Figure \ref{fig:4} illustrates the overall process of the online interactive whiteboard
+
+What will happen if the client never left the pen out of the screen? 
+%%
+The stroke samples will be indefinitely long. 
+%%
+This is a waste because these stroke samples are not useful information. 
+%%
+To overcome this problem, the client application sets the timer when stroke samples start to be on the same position for many samples. 
+%%
+When the timer ends and the position does not change, then the terminate message will be sent to end the current stroke. 
+%%
+With multi-streaming capability of SCTP, multiple strokes can be sent simultaneously.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
