@@ -144,7 +144,7 @@ From this point of view, the interactive whiteboard can be applied to the milita
 
 \begin{figure*}[t]
 \begin{center}
-\includegraphics[width=0.7\textwidth]{system.png}
+\includegraphics[width=0.7\textwidth]{iw_system_overview.png}
 \caption{Online Interactive Whiteboard System for military application}
 \label{fig:1}
 \end{center}
@@ -256,7 +256,7 @@ Clients use this stroke stream to reconstruct the stroke at its own screen.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.5\textwidth]{stroke_scheme.png}
+\includegraphics[width=0.5\textwidth]{iw_stroke_transmission.png}
 \caption{Stroke transmission scheme}
 \label{fig:2}
 \end{center}
@@ -346,14 +346,14 @@ With the design consideration proposed in previous section, figure \ref{fig:4} s
 \begin{center}
 \includegraphics[width=0.3\textwidth]{iw_tcpip.png}
 \caption{TCP/IP Model of the online interactive whiteboard}
-\label{fig:4}
+\label{fig:3}
 \end{center}
 \end{figure}
  \begin{figure*}[t]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{process}
 \caption{The online interactive whiteboard process}
-\label{fig:3}
+\label{fig:4}
 \end{center}
 \end{figure*}
 
@@ -379,7 +379,7 @@ The server application should always be running and ready to serve client applic
 After logging in to the system, clients are able to create whiteboard. The client, who creates whiteboard, becomes the whiteboard manager of that whiteboard session. The process of creating whiteboard is initiated by the client side. The client sends a request to initiate whiteboard. Upon receiving the request, the server checks whether or not this client involves in any other whiteboard session. If so, the request is rejected. If not, the request is accepted and the server allocates database space for recording whiteboard history. This space contains information about whiteboard session ID, manager ID, participant ID, and synchronization history. This feature enable playback of the old whiteboard sessions. After allocating space for whiteboard session, the server sends acknowledgment to the client. The client changes its role to whiteboard manager.
 Whiteboard manager has an ability to invite other clients to the whiteboard session. Clients that are eligible for invitation must have already been authorized by the server through the login process and must not have involved in any whiteboard session. The available client lists are distributed to the manager by the server. The invitation process starts when manager sends the invitation message to one or more clients. It is not peer-to-peer communication. The invitation message is received by the server first. The server searches for socket address specific for each destination. Then, it forwards the invitation message to all destinations. Upon receiving the invitation message, the clients have an option to accept or reject invitation. The reply message is sent back to the server. The server registers the client to whiteboard session and sends notification message to the manager, if the answer is yes. If the answer is no, the server just sends notification message to the manager. The clients accepting invitation becomes participants in whiteboard session.
 A whiteboard session is not blinded from other clients. Clients in the system can see a list of whiteboard session, but cannot see what is inside. The clients are able to join any whiteboard session with permission from the corresponding whiteboard manager. Client currently logged into the system can send the joining request to the manager. Just like invitation message, joining message is not peer-to-peer communication. The message is sent to server, then server forward message to the manager. After receiving joining request, the manager decides on accepting or rejecting the request. The reply message is sent out to server. The server checks whether the answer is yes or no. If the answer is yes, then the server registers requesting client to the whiteboard session, and notifies both new participant and the manager. The whiteboard screens on new participants? application are synchronized to the up-to-date screen using whiteboard synchronization history stored in the server.
-Participants can leave the whiteboard session anytime by sending leaving request to the server. Server unregisters participant who is sending leaving request from whiteboard session. Then, the server sends notify message to both leaving client and manager. Leaving client can request joining the whiteboard session again as long as the session still running. Leaving clients are not terminated from the system. To be terminated from system, client must log out from system. If the server crashes, then all clients? connections will be terminated. Figure  illustrate the overall process of the online interactive whiteboard
+Participants can leave the whiteboard session anytime by sending leaving request to the server. Server unregisters participant who is sending leaving request from whiteboard session. Then, the server sends notify message to both leaving client and manager. Leaving client can request joining the whiteboard session again as long as the session still running. Leaving clients are not terminated from the system. To be terminated from system, client must log out from system. If the server crashes, then all clients? connections will be terminated. Figure \ref{fig:4} illustrate the overall process of the online interactive whiteboard
 
 What if the client never left the pen out of the screen? The stroke samples will be indefinitely long. This is a waste because these stroke samples are not useful information. To overcome this problem, the client application sets the timer when stroke samples start to be on the same position for many samples. When the timer ends and the position does not change, then the terminate message will be sent to end the current stroke. With multi-streaming capability of SCTP, multiple strokes can be sent simultaneously.
 
