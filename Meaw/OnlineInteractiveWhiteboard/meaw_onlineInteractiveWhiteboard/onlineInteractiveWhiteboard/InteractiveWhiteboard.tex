@@ -163,9 +163,9 @@ The types of services performed and protocols used at each layer within the TCP/
 %%
 Application layer provides process-to-process application data exchange. 
 %%
-Transport layer handles host-to-host communication. Internet layer establishes internetworking between networks. 
+The transport layer handles host-to-host communication. Internet layer establishes internetworking between networks. 
 %%
-Link layer defines how data is physically sent and received over single link. 
+The link layer defines how data is physically sent and received over single link. 
 %%
 This paper proposes the design framework for an online interactive whiteboard that specifies suitable protocols for each layer in TCP/IP model.
 
@@ -192,18 +192,67 @@ This paper proposes the design framework for an online interactive whiteboard th
 \section{System Overview}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The online interactive whiteboard is the electronic whiteboard with the client-server program, where the information drawn on whiteboard is exchanged through internet or LAN in real-time. There will be two part of application: client application and server application. The application works in client-server manner.  Figure \ref{fig:1} illustrates the structure of system.  
+The online interactive whiteboard is the electronic whiteboard with the client-server program, where the information drawn on whiteboard is exchanged through internet or LAN in real-time. 
+%%
+There are two parts of application: client application and server application. 
+%%
+The designed application works in client-server manner.  
+%%
+Figure \ref{fig:1} illustrates the structure of system.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 \subsection{Server}
-The server is responsible for the processing request and distributing the up-to-date whiteboard screen in real-time. The server is responsible for initializing new whiteboard session when there is a request and handles invitation, joining and leaving requests to the whiteboard. The server also contains database storing information about system members and whiteboard session history. It also handles the authentication to the system. The server should be able to handle multiple requests and distribute information in shortest time, so that the system meet real-time need in the military operation.
+
+The server is responsible for the processing request and distributing the up-to-date whiteboard screen in real-time. 
+%%
+The server is responsible for initializing new whiteboard session when there is a request and handles invitation, joining and leaving requests to the whiteboard. 
+%%
+The server also contains database storing information about system members and whiteboard session history. 
+%%
+It also handles the authentication to the system. 
+%%
+The server should be able to handle multiple requests and distribute information in shortest time, so that the system meet real-time need in the military operation.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Client}
-There are two roles of clients. The first role is whiteboard manager. Whiteboard manager is the member who requests for the new whiteboard allocation. The second role is participant. Participant can join the whiteboard by invitation from whiteboard manager or authorized request for joining the whiteboard. 
+
+In the system, there are two roles of clients: whiteboard manager and participant.  
+%%
+Firstly, the whiteboard manager is the member who requests for the new whiteboard allocation. 
+%%
+The participant can join the whiteboard by an invitation from whiteboard manager or authorized request for joining the whiteboard. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Network}
-The system will operate in IP-based network environment. The system should be able to work with existing internet network without installation of new network hardware.  Server may be placed inside the headquarter. Each client can communicate through existing military's internet. 
 
+The proposed system is operated in IP-based network environment. 
+%%
+This system should be able to work with existing Internet network without installation of new network hardware.  
+%%
+The server can be placed inside the headquarter or the center of command and control unit. 
+%%
+Each client can communicate through existing military's Internet connections. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Design Consideration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Data messages}
-The virtual whiteboard should be able to present and distribute data on whiteboard to all participants. The whiteboard screen on each participant should be updated as fast as real-time. All participants will use the same screen configurations such as screen size. The screen can be synchronized according to synchronization messages. Instead of sending the whole screen as media stream, only stroke data will be sent along with the instruction message at the beginning and the end as illustrated in figure \ref{fig:2}. Stroke data is the stream of samples containing position on screen and sequence number. Clients use this stroke stream to reconstruct the stroke at its own screen. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The virtual whiteboard should be able to present and distribute data on whiteboard to all participants. 
+%%
+The whiteboard screen on each participant should be updated as fast as real-time. 
+%%
+All participants will use the same screen configurations such as screen size. 
+%%
+The screen can be synchronized according to synchronization messages. 
+%5
+Instead of sending the whole screen as media stream, only stroke data will be sent along with the instruction message at the beginning and the end as illustrated in figure \ref{fig:2}. 
+%%
+Stroke data is the stream of samples containing position on screen and sequence number. 
+%%
+Clients use this stroke stream to reconstruct the stroke at its own screen. 
 
 \begin{figure}[h]
 \begin{center}
@@ -213,11 +262,36 @@ The virtual whiteboard should be able to present and distribute data on whiteboa
 \end{center}
 \end{figure}
 
-In addition to whiteboard synchronization message there will be system authorization message that will be used to establish and terminate connection between single client and the server, whiteboard initialization message that is responsible for initiating whiteboard space and session to be used among specific group, invitation message that takes care of sending whiteboard invitation to connected user, and joining and leaving message that handles joining request to existing whiteboard session.
+In addition to whiteboard synchronization message, there is a system authorization message used to establish and terminate connection between single client and the server, whiteboard initialization message that is responsible for initiating whiteboard space and session to be used among specific group, invitation message that takes care of sending whiteboard invitation to connected user, and joining and leaving message that handles joining request to existing whiteboard session.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Security}
-There might be some information on whiteboard that should be kept secret among group. Therefore, data security would be needed. One solution is to use data encryption. Basically, the encoding information is related to mathematical methods to protect the raw data or text that needed to sent to the recipient. Raw data are turned into text data or other forms of understanding that cannot read by anyone who does not have the key for reviewing that information. The process of transforming the initial information is called "Encrypted data or data Encryption?. On the other hand, the conversion process that transforms unreadable information back to the original text is called the decoding information or decryption. There are 2 main types of encrypt data algorithms
+
+There might be some information on whiteboard that should be kept secret among group. 
+%%
+Therefore, data security is definitely required. 
+%%
+One solution is to use data encryption.
+%%
+Basically, the encoding information is related to mathematical methods to protect the raw data or text that needed to sent to the recipient. 
+%%
+Raw data are turned into text data or other forms of understanding that cannot read by anyone who does not have the key for reviewing that information. 
+%%
+The process of transforming the initial information is called \emp{Encrypted data or data Encryption}. 
+%%
+On the other hand, the conversion process that transforms unreadable information back to the original text is called the decoding information or decryption. There are 2 main types of encrypt data algorithms
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Transport Layer}
-Transport Layer performs similar functions to the Network layer in controlling the quality of the sending and receiving data. If there is an error occurring in the network or network failure, the transport layer will look for the other route that leads to the destination. It will also store the sent data until the new network connection is established. In this paper, Stream Control Transport Protocol (SCTP) is chosen due to many advantages comparing to other protocols as listed in table . One of the key advantage is that it supports multi-streaming. 
+Transport Layer performs similar functions to the Network layer in controlling the quality of the sending and receiving data. 
+%%
+If there is an error occurring in the network or network failure, the transport layer will look for the other route that leads to the destination. 
+%%
+It will also store the sent data until the new network connection is established. 
+%%
+In this paper, Stream Control Transport Protocol (SCTP) is chosen due to many advantages comparing to other protocols as listed in table . 
+%%
+One of the key advantage is the supporting of multi-streaming. 
 
 \begin{table}[h]
   \renewcommand{\arraystretch}{2}
@@ -244,14 +318,28 @@ Transport Layer performs similar functions to the Network layer in controlling t
   \label{tab:1}
 \end{table}
 
-SCTP operation is similar to TCP, but the characteristic of the data is similar to the one in UDP. SCTP is the message-oriented protocol, while TCP is the stream-oriented protocol. It supports many mandatory features including multi-homing, multi-streaming, three delivery modes (ordered delivery, unordered delivery, and partially ordered), selective acknowledgement support (SACK), heartbeat keep-alive mechanism and DoS protection. The data in SCTP, or SCTP packet, will be identified by IP address. Each SCTP packet consists of header and chucks, and is divided into many small parts. 
+SCTP operation is similar to TCP, but the characteristic of the data is similar to the one in UDP. 
+%%
+SCTP is the message-oriented protocol, while TCP is the stream-oriented protocol. 
+%%
+It supports many mandatory features including multi-homing, multi-streaming, three delivery modes (ordered delivery, unordered delivery, and partially ordered), selective acknowledgment support (SACK), heartbeat keep-alive mechanism and DoS protection. 
+%%
+The data in SCTP, or SCTP packet, is identified by IP address. 
+%%
+Each SCTP packet consists of header and chucks, and is divided into many small parts. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Internet Layer}
 The existing internet connection will be used as the backbone network. The application should support both IPv4 and IPv6. IPv6 is already backward compatible with IPv4, provided that special techniques are used. To support IPv4/IPv6 compatibility, a scheme was developed to allow IPv4 addresses to be embedded within the IPv6 address structure. This method takes regular IPv4 addresses and puts them in a special IPv6 format so they are recognized as being IPv4 addresses by certain IPv6 devices.
 Since the IPv6 address space is so much bigger than that of IPv4, embedding the latter within the former is easy; it's like tucking a compact sedan into the hold of a cargo ship. The embedding address space is part of the reserved address block whose addresses begin with eight zero bits, but only a relatively small part of it. Two different embedding formats are used. Both have zeroes for the first 80 bits of the address, and put the embedded IPv4 address into the last 32 bits of the IPv6 address format. They differ on the value of the 16 remaining bits in between (bits 81 to 96, counting from the left). These embedding techniques are already implemented in most existing network devices and operating system. Therefore, there should not be any problem whether IPv4 or IPv6 is used.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Input and Output Device}
 A touch screen can be used as an interface device for input and output data. It is basically the device that can be use as both the input, as mouse or keyboard, and output, as the normal display monitor. The main component of the touch screen is the contact sensor under the control board which will analyze the signal received from the sensor for the exact coordination of the contact place. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Specification of Online Interactive Whiteboard Application}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 With the design consideration proposed in previous section, figure \ref{fig:4} summarizes the protocol applied to each layer of TCP/IP model. This section gives detailed specification of application protocol for the online interactive whiteboard system.
  
  \begin{figure}[h]
@@ -268,24 +356,36 @@ With the design consideration proposed in previous section, figure \ref{fig:4} s
 \label{fig:3}
 \end{center}
 \end{figure*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Application Roles}
-Application can take on three roles. The server role operates on server application. The manager and participant roles operate on client application
+Application can take on three roles: The server role operates on server application, the manager and participant roles operate on client application
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Server Role}
-The server is responsible for the processing whiteboard and distributing the up-to-date whiteboard in real-time. The server is rsponsible for initializing new whiteboard session when there is a request and handles invitation, joining and leaving requests to the whiteboard. The server receives the new whiteboard details from participants and synchronizing new details to all participants. All participants should be synchronized to the same up-to-date whiteboard. The server does not actually distribute the whiteboard screen, but it distributes the action done by participant. Clients received this distributed information will update their own whiteboard accordingly. The server also contains database storing information about system members and whiteboard session history. It also handles the authentication to the system. The server should be able to handle multiple requests and distribute information in shortest time, so that the system is working as close as the real-time.
+The server is responsible for the processing whiteboard and distributing the up-to-date whiteboard in real-time. The server is responsible for initializing new whiteboard session when there is a request and handles invitation, joining and leaving requests to the whiteboard. The server receives the new whiteboard details from participants and synchronizing new details to all participants. All participants should be synchronized to the same up-to-date whiteboard. The server does not actually distribute the whiteboard screen, but it distributes the action done by participant. Clients received this distributed information will update their own whiteboard accordingly. The server also contains database storing information about system members and whiteboard session history. It also handles the authentication to the system. The server should be able to handle multiple requests and distribute information in shortest time, so that the system is working as close as the real-time.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Manager Role}
 Whiteboard manager is the member who requests for the new whiteboard allocation. Whiteboard manager can invite other members to participate in whiteboard. He can authorize other members to join in the whiteboard. The whiteboard manager is the only one who can end the whiteboard session. Whiteboard manager is eligible to update content of whiteboard during whiteboard session at anytime
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Participant Role}
 Participant can join the whiteboard by invitation from whiteboard manager or authorized request for joining the whiteboard. Participants can leave the whiteboard at anytime during whiteboard session and they can join again with authorization from the whiteboard manager. Participants are eligible to update content of whiteboard just like whiteboard manager.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Application Process}
-The server application should always be running and ready to serve client application. When the client application is started, it create socket for communication with the server. The communication with system has not been established yet.  Client needs to login to establish a connection by sending authorization request message to the server. When the login information is authorized by the server, the server registers the client along with its socket address and sends the acknowledgement message back to client. A client is now ready to send or receive message from server. A client socket stays open until client logs out.
-After logging in to the system, clients are able to create whiteboard. The client, who creates whiteboard, becomes the whiteboard manager of that whiteboard session. The process of creating whiteboard is initiated by the client side. The client sends a request to initiate whiteboard. Upon receiving the request, the server checks whether or not this client involves in any other whiteboard session. If so, the request is rejected. If not, the request is accepted and the server allocates database space for recording whiteboard history. This space contains information about whiteboard session ID, manager ID, participant ID, and synchronization history. This feature enable playback of the old whiteboard sessions. After allocating space for whiteboard session, the server sends acknowledgement to the client. The client changes its role to whiteboard manager.
+The server application should always be running and ready to serve client application. When the client application is started, it create socket for communication with the server. The communication with system has not been established yet.  Client needs to login to establish a connection by sending authorization request message to the server. When the login information is authorized by the server, the server registers the client along with its socket address and sends the acknowledgment message back to client. A client is now ready to send or receive message from server. A client socket stays open until client logs out.
+After logging in to the system, clients are able to create whiteboard. The client, who creates whiteboard, becomes the whiteboard manager of that whiteboard session. The process of creating whiteboard is initiated by the client side. The client sends a request to initiate whiteboard. Upon receiving the request, the server checks whether or not this client involves in any other whiteboard session. If so, the request is rejected. If not, the request is accepted and the server allocates database space for recording whiteboard history. This space contains information about whiteboard session ID, manager ID, participant ID, and synchronization history. This feature enable playback of the old whiteboard sessions. After allocating space for whiteboard session, the server sends acknowledgment to the client. The client changes its role to whiteboard manager.
 Whiteboard manager has an ability to invite other clients to the whiteboard session. Clients that are eligible for invitation must have already been authorized by the server through the login process and must not have involved in any whiteboard session. The available client lists are distributed to the manager by the server. The invitation process starts when manager sends the invitation message to one or more clients. It is not peer-to-peer communication. The invitation message is received by the server first. The server searches for socket address specific for each destination. Then, it forwards the invitation message to all destinations. Upon receiving the invitation message, the clients have an option to accept or reject invitation. The reply message is sent back to the server. The server registers the client to whiteboard session and sends notification message to the manager, if the answer is yes. If the answer is no, the server just sends notification message to the manager. The clients accepting invitation becomes participants in whiteboard session.
 A whiteboard session is not blinded from other clients. Clients in the system can see a list of whiteboard session, but cannot see what is inside. The clients are able to join any whiteboard session with permission from the corresponding whiteboard manager. Client currently logged into the system can send the joining request to the manager. Just like invitation message, joining message is not peer-to-peer communication. The message is sent to server, then server forward message to the manager. After receiving joining request, the manager decides on accepting or rejecting the request. The reply message is sent out to server. The server checks whether the answer is yes or no. If the answer is yes, then the server registers requesting client to the whiteboard session, and notifies both new participant and the manager. The whiteboard screens on new participants? application are synchronized to the up-to-date screen using whiteboard synchronization history stored in the server.
 Participants can leave the whiteboard session anytime by sending leaving request to the server. Server unregisters participant who is sending leaving request from whiteboard session. Then, the server sends notify message to both leaving client and manager. Leaving client can request joining the whiteboard session again as long as the session still running. Leaving clients are not terminated from the system. To be terminated from system, client must log out from system. If the server crashes, then all clients? connections will be terminated. Figure  illustrate the overall process of the online interactive whiteboard
-   What if the client never left the pen out of the screen? The stroke samples will be indefinitely long. This is a waste because these stroke samples are not useful information. To overcome this problem, the client application sets the timer when stroke samples start to be on the same position for many samples. When the timer ends and the position does not change, then the terminate message will be sent to end the current stroke. With multi-streaming capability of SCTP, multiple strokes can be sent simultaneously.
 
+What if the client never left the pen out of the screen? The stroke samples will be indefinitely long. This is a waste because these stroke samples are not useful information. To overcome this problem, the client application sets the timer when stroke samples start to be on the same position for many samples. When the timer ends and the position does not change, then the terminate message will be sent to end the current stroke. With multi-streaming capability of SCTP, multiple strokes can be sent simultaneously.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 An online interactive whiteboard for military application is based on IP network technologies. 
 %%
 The proposed system will be operated in client-server model. 
@@ -302,8 +402,7 @@ Other consideration such as security and network difficulties are included as we
 %%
 An online interactive whiteboard will be useful in future military operation where real-time distribution and updating of plan is crucial.
 
-
- \begin{thebibliography}{1}
+\begin{thebibliography}{1}
 
   \bibitem{AA} {\em The Operation Process}, Army Doctrine Publication, No. 5-0, Headquarter, Department of the Army, Washington, DC, May 17, 2012. [Online]. Available: Army Knowledge Online.
 
