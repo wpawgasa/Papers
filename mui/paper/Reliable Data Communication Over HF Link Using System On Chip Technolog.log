@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.22)  26 JAN 2015 00:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.22)  26 JAN 2015 00:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -281,10 +281,10 @@ e
 <hf-1.jpg, id=1, 307.02625pt x 241.06168pt>
 File: hf-1.jpg Graphic file (type jpg)
  <use hf-1.jpg>
-Package pdftex.def Info: hf-1.jpg used on input line 451.
+Package pdftex.def Info: hf-1.jpg used on input line 449.
 (pdftex.def)             Requested size: 262.04987pt x 205.7641pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 451--452
+Overfull \hbox (9.0pt too wide) in paragraph at lines 449--450
  [][] 
  []
 
@@ -294,30 +294,30 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 451--452
  <./hf-1.jpg>] <hf-2.jpg, id=11, 396.27242pt x 144.54pt>
 File: hf-2.jpg Graphic file (type jpg)
  <use hf-2.jpg>
-Package pdftex.def Info: hf-2.jpg used on input line 463.
+Package pdftex.def Info: hf-2.jpg used on input line 461.
 (pdftex.def)             Requested size: 262.04987pt x 95.58635pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 463--464
+Overfull \hbox (9.0pt too wide) in paragraph at lines 461--462
  [][] 
  []
 
 <hf-3-1.png, id=12, 292.47523pt x 98.94684pt>
 File: hf-3-1.png Graphic file (type png)
  <use hf-3-1.png>
-Package pdftex.def Info: hf-3-1.png used on input line 476.
+Package pdftex.def Info: hf-3-1.png used on input line 474.
 (pdftex.def)             Requested size: 262.04987pt x 88.65425pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 476--477
+Overfull \hbox (9.0pt too wide) in paragraph at lines 474--475
  [][] 
  []
 
 <hf-3-2.jpg, id=14, 636.3775pt x 370.38374pt>
 File: hf-3-2.jpg Graphic file (type jpg)
  <use hf-3-2.jpg>
-Package pdftex.def Info: hf-3-2.jpg used on input line 485.
+Package pdftex.def Info: hf-3-2.jpg used on input line 483.
 (pdftex.def)             Requested size: 262.04987pt x 152.51389pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 485--486
+Overfull \hbox (9.0pt too wide) in paragraph at lines 483--484
  [][] 
  []
 
@@ -341,10 +341,10 @@ Missing character: There is no ù in font ptmr7t!
 <hf-4-1.jpg, id=19, 729.72626pt x 324.21124pt>
 File: hf-4-1.jpg Graphic file (type jpg)
  <use hf-4-1.jpg>
-Package pdftex.def Info: hf-4-1.jpg used on input line 500.
+Package pdftex.def Info: hf-4-1.jpg used on input line 498.
 (pdftex.def)             Requested size: 262.04987pt x 116.42407pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 500--501
+Overfull \hbox (9.0pt too wide) in paragraph at lines 498--499
  [][] 
  []
 
@@ -355,20 +355,20 @@ Missing character: There is no ô in font ptmr7t!
 File: hf-4-2.jpg Graphic file (type jpg)
 
 <use hf-4-2.jpg>
-Package pdftex.def Info: hf-4-2.jpg used on input line 513.
+Package pdftex.def Info: hf-4-2.jpg used on input line 511.
 (pdftex.def)             Requested size: 262.04987pt x 130.85768pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 513--514
+Overfull \hbox (9.0pt too wide) in paragraph at lines 511--512
  [][] 
  []
 
 <hf-4-3.jpg, id=24, 375.901pt x 183.34268pt>
 File: hf-4-3.jpg Graphic file (type jpg)
  <use hf-4-3.jpg>
-Package pdftex.def Info: hf-4-3.jpg used on input line 521.
+Package pdftex.def Info: hf-4-3.jpg used on input line 519.
 (pdftex.def)             Requested size: 262.04987pt x 127.81863pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 521--522
+Overfull \hbox (9.0pt too wide) in paragraph at lines 519--520
  [][] 
  []
 
@@ -378,16 +378,16 @@ Missing character: There is no ì in font ptmr7t!
 <figure-math.png, id=25, 70.2625pt x 45.16875pt>
 File: figure-math.png Graphic file (type png)
  <use figure-math.png>
-Package pdftex.def Info: figure-math.png used on input line 530.
+Package pdftex.def Info: figure-math.png used on input line 528.
 (pdftex.def)             Requested size: 52.41316pt x 33.69382pt.
 
 <hf-4-4.jpg, id=26, 697.60625pt x 266.9975pt>
 File: hf-4-4.jpg Graphic file (type jpg)
  <use hf-4-4.jpg>
-Package pdftex.def Info: hf-4-4.jpg used on input line 538.
+Package pdftex.def Info: hf-4-4.jpg used on input line 536.
 (pdftex.def)             Requested size: 262.04987pt x 100.2949pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 538--539
+Overfull \hbox (9.0pt too wide) in paragraph at lines 536--537
  [][] 
  []
 
@@ -404,20 +404,20 @@ Missing character: There is no ô in font ptmr7t!
 <hf-4-5.jpg, id=31, 481.8pt x 227.85126pt>
 File: hf-4-5.jpg Graphic file (type jpg)
  <use hf-4-5.jpg>
-Package pdftex.def Info: hf-4-5.jpg used on input line 566.
+Package pdftex.def Info: hf-4-5.jpg used on input line 564.
 (pdftex.def)             Requested size: 262.04987pt x 123.93135pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 566--567
+Overfull \hbox (9.0pt too wide) in paragraph at lines 564--565
  [][] 
  []
 
 <hf-4-6.jpg, id=32, 242.9075pt x 175.65625pt>
 File: hf-4-6.jpg Graphic file (type jpg)
  <use hf-4-6.jpg>
-Package pdftex.def Info: hf-4-6.jpg used on input line 576.
+Package pdftex.def Info: hf-4-6.jpg used on input line 574.
 (pdftex.def)             Requested size: 262.04987pt x 189.49684pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 576--577
+Overfull \hbox (9.0pt too wide) in paragraph at lines 574--575
  [][] 
  []
 
@@ -429,7 +429,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--708
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 \OT1/ptm/m/n/8 http://www.globalsecurity.org/military/library/policy/army/fm/24
 -
  []
@@ -447,17 +447,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--715
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
 []\OT1/ptm/m/n/8 DR fo-rum, Defin-ing Cog-ni-tive Ra-dio and Dy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--715
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
 \OT1/ptm/m/n/8 namic Spec-trum Ac-cess, [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--715
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
 \OT1/ptm/m/n/8 http://www.wirelessinnovation.org/page/Defining[]CR[]and[]DSA
  []
 
@@ -486,12 +486,12 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--723
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 []\OT1/ptm/m/n/8 OKA Elec-tron-ics, Mod-ern Wave-forms [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--723
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 \OT1/ptm/m/n/8 http://www.hoka.com/tech[]info/modern[]waveforms.htm [Ac-cessed:
 
  []
@@ -539,13 +539,13 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
 []\OT1/ptm/m/n/8 ikipedia con-trib-u-tors, Pre-pro-ces-sor [On-line]. Avail-abl
 e:
  []
 
 
-Overfull \hbox (0.53177pt too wide) in paragraph at lines 742--743
+Overfull \hbox (0.53177pt too wide) in paragraph at lines 740--741
 \OT1/ptm/m/n/8 http://en.wikipedia.org/wiki/Preprocessor#General[]purpose[]prep
 rocessor
  []
@@ -583,7 +583,7 @@ exlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
 Output written on "Reliable Data Communication Over HF Link Using System On Chi
-p Technolog.pdf" (6 pages, 499079 bytes).
+p Technolog.pdf" (6 pages, 498975 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
