@@ -539,17 +539,10 @@ According to the functional model presented in Section 4.1, a software defined H
 \end{figure} 
 \subsubsection{Digital Signal Processing unit}
 The digital signal processing unit is the most important part of software defined radio. It is responsible for data and signal processing. Digital signal processing unit is based on programmable processor technologies. There are a lot of such technologies exists today. In this paper, only processor technology as described in [11] will be presented. The solution can be implemented from one of processor technologies or a combination of many processor technologies 
-\subsubsection{General purpose processors (GPPs)}
-According to [14], a name “general purpose”, means that this processor is not specific to any tasks or programming languages. GPPs are suitable for data processing that requires complex algorithm and high-level language (i.e. C/C++). GPPs usually run at moderate speed and are not suitable for radio waveform signal processing that require high-speed multiply accumulate (MAC) processing [5]. Hence, GPPs is usually included in a software defined radio to provide application specific data processing, operating system, or high-level communication protocol.
-The GPP solution as presented in [11] is Freescale’s MX21. The MX21 is designed to support multimedia and graphic applications for wireless platforms. The processor core runs at 266 MHz and support external 133 MHz SDRAM. 
-\subsubsection{Digital Signal Processors (DSPs)}
-DSP is a specialized microprocessor, in which its architecture is optimized for fast mathematic operation [5]. DSPs are different from GPPs in that they can perform multiply-accumulate very fast [5]. This makes DSPs more suitable than GPPs to perform some radio signal processing functions such as digital filtering and channel coding. DSPs also support high-level programming language such as C/C++ language, which is suitable for some complex algorithm such as adaptive link control algorithm. The limitation of DSPs is that it cannot perform complex signal processing at very high sampling rate. Therefore, DSPs is not suitable for complex high-speed signal processing such as waveform generation and CIC filter. \\
-The DSP solution as described in [11] is divided into two parts. 
-	\\-	A narrow-band DSP that perform narrow-band signal processing is TMS320C5510. TMS320C5510 uses C55x DSP core that can provide 400 million multiply-accumulates per second at 200 MHz clock speed. 
-	\\ -A wide-band DSP that perform wide-band signal processing is TMS320C6416. TMS320C6412 uses C64x DSP core that can provide 4800 million multiply-accumulates per second at 600 MHz clock speed. 
-\subsubsection{Field Programmable Gate Arrays (FPGAs)}
-FPGA is an integrated circuit containing many programmable logic devices that can be configured to perform specific logical function [5]. FPGAs can be programmed to perform multiply-accumulate that is a lot faster than DSPs. This makes it capable of process RF signal at high sampling rate. Typically, FPGAs is used to implement many waveforms, CIC upsampling filter, and other tasks that require high-speed signal processing. The downside of FPGAs is that it is not suitable for very complex algorithm because FPGAs is implemented using Very High-speed integrated circuit hardware Description Language (VHDL) that is not usual software development paradigm [5].
-The FPGA solution as presented in [11] is Virtex-II 2V3000 that can perform over 0.5 Tera-multiply-accumulates per second. 
+\subsubsection{System on Chip (SOC)}
+System-on-a-chip (SoC) technology is the packaging of all the necessary electronic circuits and parts for a "system" (such as a cell phone or digital camera) on a single integrated circuit ( IC ), generally known as a microchip . For example, a system-on-a-chip for a sound-detecting device might include an audio receiver, an analog-to-digital converter ( ADC ), a microprocessor , necessary memory , and the input/output logic control for a user - all on a single microchip.
+
+
 \subsection{ADC and DAC}
 The main task of DAC in software defined radio is to convert digital output signal from digital signal processing unit into analog signal. An example of DAC that is suitable for a software defined HF radio as presented in [11] is AD9744. This 14-bit DAC can support maximum rate of 210 million samples per second, which is enough to convert digital output signal from digital signal processing unit with sampling rate of 76.8 MHz.
 The ADC converter converts received analog HF signal into digital signal. The solution presented in [11] is LTC2249, which can provide 14-bit 80 million samples per second with 73 dB SNR. This give a digital output signal that meet the required sampling rate for an input to the digital signal processing unit is 76.8 MHz. 
@@ -566,17 +559,7 @@ The reconstruction and anti-aliasing filters are usually the same filter. At the
 	\label{fig:freq_resp}
 \end{figure}
 
-Tunable band-pass filter is used to reject unwanted signal at the receiver and reduce phase noise at the transmitter. The solution presented in [11] uses tunable band-pass filter based on gyrator. The primary use of gyrator is to simulates nearly perfect inductor with a small integrate circuit, such that filter can be implemented without coils of wire [15].  Hence, filter circuit can use much smaller space with gyrator. Figure \ref{fig:gyrator} illustrates a gyrator circuit and its equivalent circuit. In order to control these filters, tunable band-pass filter need interface to the digital signal processing unit. 
 
-\begin{figure}[h!]
-	\centering
-	\reflectbox{%
-		\includegraphics[width=0.5\textwidth,angle=180]{hf-4-6.jpg}}
-	\caption{A gyrator circuit and its equivalent RL circuit from [15]}
-	\label{fig:gyrator}
-\end{figure}
-
-Tunable band-pass filter is used to reject unwanted signal at the receiver and reduce phase noise at the transmitter. The solution presented in [11] uses tunable band-pass filter based on gyrator. The primary use of gyrator is to simulates nearly perfect inductor with a small integrate circuit, such that filter can be implemented without coils of wire [15].  Hence, filter circuit can use much smaller space with gyrator. Figure 4-7 illustrates a gyrator circuit and its equivalent circuit. In order to control these filters, tunable band-pass filter need interface to the digital signal processing unit. 
 
 
 % An example of a floating figure using the graphicx package.

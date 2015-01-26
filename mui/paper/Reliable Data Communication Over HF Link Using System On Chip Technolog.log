@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.22)  26 JAN 2015 00:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.22)  26 JAN 2015 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -391,37 +391,17 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 536--537
  [][] 
  []
 
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
 [4 <./hf-4-2.jpg> <./hf-4-3.jpg> <./figure-math.png> <./hf-4-4.jpg>]
 <hf-4-5.jpg, id=31, 481.8pt x 227.85126pt>
 File: hf-4-5.jpg Graphic file (type jpg)
  <use hf-4-5.jpg>
-Package pdftex.def Info: hf-4-5.jpg used on input line 564.
+Package pdftex.def Info: hf-4-5.jpg used on input line 557.
 (pdftex.def)             Requested size: 262.04987pt x 123.93135pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 564--565
+Overfull \hbox (9.0pt too wide) in paragraph at lines 557--558
  [][] 
  []
 
-<hf-4-6.jpg, id=32, 242.9075pt x 175.65625pt>
-File: hf-4-6.jpg Graphic file (type jpg)
- <use hf-4-6.jpg>
-Package pdftex.def Info: hf-4-6.jpg used on input line 574.
-(pdftex.def)             Requested size: 262.04987pt x 189.49684pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 574--575
- [][] 
- []
-
-[5 <./hf-4-5.jpg> <./hf-4-6.jpg>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -429,7 +409,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
+Underfull \hbox (badness 10000) in paragraph at lines 688--689
 \OT1/ptm/m/n/8 http://www.globalsecurity.org/military/library/policy/army/fm/24
 -
  []
@@ -447,17 +427,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--713
+Underfull \hbox (badness 10000) in paragraph at lines 694--696
 []\OT1/ptm/m/n/8 DR fo-rum, Defin-ing Cog-ni-tive Ra-dio and Dy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--713
+Underfull \hbox (badness 10000) in paragraph at lines 694--696
 \OT1/ptm/m/n/8 namic Spec-trum Ac-cess, [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--713
+Underfull \hbox (badness 10000) in paragraph at lines 694--696
 \OT1/ptm/m/n/8 http://www.wirelessinnovation.org/page/Defining[]CR[]and[]DSA
  []
 
@@ -486,12 +466,12 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
+Underfull \hbox (badness 10000) in paragraph at lines 702--704
 []\OT1/ptm/m/n/8 OKA Elec-tron-ics, Mod-ern Wave-forms [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
+Underfull \hbox (badness 10000) in paragraph at lines 702--704
 \OT1/ptm/m/n/8 http://www.hoka.com/tech[]info/modern[]waveforms.htm [Ac-cessed:
 
  []
@@ -539,13 +519,13 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
 []\OT1/ptm/m/n/8 ikipedia con-trib-u-tors, Pre-pro-ces-sor [On-line]. Avail-abl
 e:
  []
 
 
-Overfull \hbox (0.53177pt too wide) in paragraph at lines 740--741
+Overfull \hbox (0.53177pt too wide) in paragraph at lines 723--724
 \OT1/ptm/m/n/8 http://en.wikipedia.org/wiki/Preprocessor#General[]purpose[]prep
 rocessor
  []
@@ -561,19 +541,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-]
+[5 <./hf-4-5.jpg>]
 (./Reliable Data Communication Over HF Link Using System On Chip Technolog.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2899 strings out of 493117
- 43768 string characters out of 6135433
- 115469 words of memory out of 5000000
- 6336 multiletter control sequences out of 15000+600000
+ 2893 strings out of 493117
+ 43686 string characters out of 6135433
+ 115460 words of memory out of 5000000
+ 6331 multiletter control sequences out of 15000+600000
  33007 words of font info for 62 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  38i,9n,23p,1605b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -583,10 +561,10 @@ exlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
 Output written on "Reliable Data Communication Over HF Link Using System On Chi
-p Technolog.pdf" (6 pages, 498975 bytes).
+p Technolog.pdf" (5 pages, 478584 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

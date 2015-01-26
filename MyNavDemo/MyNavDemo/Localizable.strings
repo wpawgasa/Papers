@@ -1,0 +1,8 @@
+"WS_SOAP_REQUEST"="<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><authen xmlns=\"urn:authenwsdl\"><name>%@</name><pass>%@</pass></authen></soap:Body></soap:Envelope>";
+
+"WS_REQUEST"="<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><authen xmlns=\"urn:authenwsdl\"><name>%@</name><pass>%@</pass></authen></soap:Body></soap:Envelope>";
+
+
+"PTT_WS"="<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><CurrentOilPrice xmlns=\"http://www.pttplc.com/ptt_webservice/\"><Language>TH</Language></CurrentOilPrice></soap:Body></soap:Envelope>";
+
+"MY_WS_REQUEST"="<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><authen xmlns=\"urn:authenwsdl\"><name></name><pass></pass></authen></soap:Body></soap:Envelope>";
