@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.22)  26 JAN 2015 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.22)  27 JAN 2015 06:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,10 +395,10 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 536--537
 <hf-4-5.jpg, id=31, 481.8pt x 227.85126pt>
 File: hf-4-5.jpg Graphic file (type jpg)
  <use hf-4-5.jpg>
-Package pdftex.def Info: hf-4-5.jpg used on input line 557.
+Package pdftex.def Info: hf-4-5.jpg used on input line 556.
 (pdftex.def)             Requested size: 262.04987pt x 123.93135pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 557--558
+Overfull \hbox (9.0pt too wide) in paragraph at lines 556--557
  [][] 
  []
 
@@ -409,7 +409,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--689
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
 \OT1/ptm/m/n/8 http://www.globalsecurity.org/military/library/policy/army/fm/24
 -
  []
@@ -427,17 +427,17 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--696
+Underfull \hbox (badness 10000) in paragraph at lines 693--695
 []\OT1/ptm/m/n/8 DR fo-rum, Defin-ing Cog-ni-tive Ra-dio and Dy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--696
+Underfull \hbox (badness 10000) in paragraph at lines 693--695
 \OT1/ptm/m/n/8 namic Spec-trum Ac-cess, [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--696
+Underfull \hbox (badness 10000) in paragraph at lines 693--695
 \OT1/ptm/m/n/8 http://www.wirelessinnovation.org/page/Defining[]CR[]and[]DSA
  []
 
@@ -466,12 +466,12 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--704
+Underfull \hbox (badness 10000) in paragraph at lines 701--703
 []\OT1/ptm/m/n/8 OKA Elec-tron-ics, Mod-ern Wave-forms [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--704
+Underfull \hbox (badness 10000) in paragraph at lines 701--703
 \OT1/ptm/m/n/8 http://www.hoka.com/tech[]info/modern[]waveforms.htm [Ac-cessed:
 
  []
@@ -519,13 +519,13 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
 []\OT1/ptm/m/n/8 ikipedia con-trib-u-tors, Pre-pro-ces-sor [On-line]. Avail-abl
 e:
  []
 
 
-Overfull \hbox (0.53177pt too wide) in paragraph at lines 723--724
+Overfull \hbox (0.53177pt too wide) in paragraph at lines 722--723
 \OT1/ptm/m/n/8 http://en.wikipedia.org/wiki/Preprocessor#General[]purpose[]prep
 rocessor
  []
@@ -561,7 +561,7 @@ exlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
 Output written on "Reliable Data Communication Over HF Link Using System On Chi
-p Technolog.pdf" (5 pages, 478584 bytes).
+p Technolog.pdf" (5 pages, 478085 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
